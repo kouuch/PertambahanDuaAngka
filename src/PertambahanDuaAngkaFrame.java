@@ -1,4 +1,5 @@
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
 /*
@@ -242,7 +243,8 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
 
     private void txtAngka1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAngka1KeyTyped
         char karakter = evt.getKeyChar();
-    if (!Character.isDigit(karakter)) {
+    // Memeriksa apakah karakter bukan digit dan bukan karakter kontrol (backspace, delete, dll.)
+    if (!Character.isDigit(karakter) && karakter != KeyEvent.VK_BACK_SPACE && karakter != KeyEvent.VK_DELETE) {
         evt.consume();
         JOptionPane.showMessageDialog(this, "Masukkan hanya angka!", "Error", JOptionPane.ERROR_MESSAGE);
     }
@@ -250,7 +252,8 @@ public class PertambahanDuaAngkaFrame extends javax.swing.JFrame {
 
     private void txtAngka2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAngka2KeyTyped
         char karakter = evt.getKeyChar();
-    if (!Character.isDigit(karakter)) {
+    // Memeriksa apakah karakter bukan digit dan bukan karakter kontrol (backspace, delete, dll.)
+    if (!Character.isDigit(karakter) && karakter != KeyEvent.VK_BACK_SPACE && karakter != KeyEvent.VK_DELETE) {
         evt.consume();
         JOptionPane.showMessageDialog(this, "Masukkan hanya angka!", "Error", JOptionPane.ERROR_MESSAGE);
     }
