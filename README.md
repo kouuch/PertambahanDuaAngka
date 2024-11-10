@@ -23,3 +23,7 @@ Aplikasi GUI sederhana berbasis Java yang memungkinkan pengguna untuk memasukkan
 1. **GUI** - Menyediakan antarmuka untuk pengguna agar dapat berinteraksi dengan aplikasi.
 2. **Logika Program** - Menyediakan logika dasar untuk menjumlahkan dua angka dan memvalidasi input pengguna.
 3. **Event Handling** - Menangani event untuk tombol Tambah, Hapus, dan Keluar.
+
+##Gambar
+
+![1](https://github.com/user-attachments/assets/9cc73258-05c7-4f27-9096-ef9449ce608c)
